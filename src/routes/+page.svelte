@@ -28,7 +28,10 @@
 						<a href="{base}/frequencies-2">Båndplan 2</a>
 					</li>
 					<li>
-						<a href="{base}/formulas">Formler</a>
+						<a href="{base}/formulas-1">Formler 1</a>
+					</li>
+					<li>
+						<a href="{base}/formulas-1">Formler 2</a>
 					</li>
 				</ul>
 			</div>

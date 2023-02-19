@@ -36,7 +36,7 @@
     <div class="row">
         <div class="col">
             <h2>Velg korrekt svaralternativ</h2>
-            {#if currentAnswer && !currentAnswer.value && currentQuestion.explanation}
+            {#if currentAnswer && currentQuestion.explanation}
                 <div class="alert alert-info" role="alert">
                     <h4 class="alert-heading">Forklaring</h4>
                     <p>{currentQuestion.explanation}</p>

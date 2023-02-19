@@ -1,6 +1,6 @@
 <script lang="ts">
     import { page } from "$app/stores";
-    import Quiz from "../../Quiz.svelte";
+    import Quiz from "$lib/components/Quiz.svelte";
 </script>
 
 <svelte:head>

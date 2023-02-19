@@ -1,3 +1,5 @@
+import type { Range } from "./question";
+
 export type Answer = {
     id: number;
     value: boolean;
@@ -5,5 +7,5 @@ export type Answer = {
 
 export type AnswerEvent = {
     id: number,
-    answer: string
+    answer: string | Range
 };

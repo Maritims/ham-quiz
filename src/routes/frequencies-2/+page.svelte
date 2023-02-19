@@ -1,7 +1,7 @@
 <script lang="ts">
     import { page } from "$app/stores";
-    import Quiz from "../../Quiz.svelte";
-    import Wavelength from "../../Wavelength.svelte";
+    import Quiz from "$lib/components/Quiz.svelte";
+    import Wavelength from "$lib/components/Wavelength.svelte";
 </script>
 
 <svelte:head>

@@ -22,7 +22,10 @@
 						<a href="{base}/qcodes">Q-koder</a>
 					</li>
 					<li>
-						<a href="{base}/frequencies">Båndplan</a>
+						<a href="{base}/frequencies-1">Båndplan 1</a>
+					</li>
+					<li>
+						<a href="{base}/frequencies-2">Båndplan 2</a>
 					</li>
 					<li>
 						<a href="{base}/formulas">Formler</a>

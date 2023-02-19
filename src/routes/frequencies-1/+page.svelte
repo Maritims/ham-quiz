@@ -1,6 +1,7 @@
 <script lang="ts">
     import { page } from "$app/stores";
     import Quiz from "../../Quiz.svelte";
+    import Wavelength from "../../Wavelength.svelte";
 </script>
 
 <svelte:head>
@@ -17,5 +18,6 @@
             </div>
         </div>
     </div>
+    <Wavelength />
     <Quiz questions={$page.data.questions} />
 </section>

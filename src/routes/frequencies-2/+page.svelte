@@ -6,7 +6,7 @@
 
 <svelte:head>
 	<title>Båndplan</title>
-	<meta name="description" content="Båndplan" />
+	<meta name="description" content={$page.data.title} />
 </svelte:head>
 
 <section>

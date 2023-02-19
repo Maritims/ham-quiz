@@ -33,7 +33,7 @@
                     value: currentQuestion.answer.start === start && currentQuestion.answer.end === end
                 },
             ];
-            nextButton.focus();
+            nextButton?.focus();
         }
     }
 

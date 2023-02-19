@@ -36,12 +36,6 @@
     <div class="row">
         <div class="col">
             <h2>Velg korrekt svaralternativ</h2>
-            {#if currentAnswer && currentQuestion.explanation}
-                <div class="alert alert-info" role="alert">
-                    <h4 class="alert-heading">Forklaring</h4>
-                    <p>{currentQuestion.explanation}</p>
-                </div>
-            {/if}
             <div class="card">
                 <h5 class="card-header">Spørsmål {questions.indexOf(currentQuestion) + 1} av {questions.length}: {currentQuestion.question}</h5>
                 <ul class="list-group list-group-flush">
@@ -67,9 +61,14 @@
             {/if}
         </div>
     </div>
-    {#if isCompleted}
+    {#if currentAnswer && currentQuestion.explanation}
         <div class="row mt-2">
-            
+            <div class="col">
+                <div class="alert alert-info" role="alert">
+                    <h4 class="alert-heading">Forklaring</h4>
+                    <p>{currentQuestion.explanation}</p>
+                </div>
+            </div>
         </div>
     {/if}
 </div>

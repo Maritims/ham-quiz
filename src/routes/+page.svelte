@@ -1,3 +1,8 @@
+<script>
+
+    import { base } from "$app/paths";
+
+</script>
 <svelte:head>
 	<title>Kategorier</title>
 	<meta name="description" content="Kategorier" />
@@ -14,10 +19,13 @@
 			<div class="col">
 				<ul>
 					<li>
-						<a href="/qcodes">Q-koder</a>
+						<a href="{base}/qcodes">Q-koder</a>
 					</li>
 					<li>
-						<a href="/frequencies">Båndplan</a>
+						<a href="{base}/frequencies">Båndplan</a>
+					</li>
+					<li>
+						<a href="{base}/formulas">Formler</a>
 					</li>
 				</ul>
 			</div>

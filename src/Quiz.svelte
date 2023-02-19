@@ -27,15 +27,20 @@
 
 	let currentId = questions[0].id;
 	let isCompleted = false;
-	$: currentQuestion = questions.find(
-		(question) => question.id === currentId
-	)!;
+	$: currentQuestion = questions.find((question) => question.id === currentId)!;
+    $: currentAnswer = answers.find(a => a.id === currentId);
 	$: score = answers.reduce((sum, a) => sum += a.value ? 1 : 0, 0);
 </script>
 
 <div class="container">
     <div class="row">
         <div class="col">
+            {#if currentAnswer && !currentAnswer.value && currentQuestion.explanation}
+                <div class="alert alert-info" role="alert">
+                    <h4 class="alert-heading">Forklaring</h4>
+                    <p>{currentQuestion.explanation}</p>
+                </div>
+            {/if}
             <div class="card">
                 <h5 class="card-header">Spørsmål {questions.indexOf(currentQuestion) + 1} av {questions.length}: {currentQuestion.question}</h5>
                 <ul class="list-group list-group-flush">
